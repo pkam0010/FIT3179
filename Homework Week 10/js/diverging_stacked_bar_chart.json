@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Gender Gap in Global Unemployment Rates (2015–2024)",
+  "data": { "url": "https://pkam0010.github.io/FIT3179/Homework%20Week%2010/data/global_unemployment_gender_cleaned.csv"},
+  "transform": [
+    {"filter": "datum.year == selectedYear"},
+    {
+      "calculate": "datum.sex == 'Male' ? -datum.unemployment_rate : datum.unemployment_rate",
+      "as": "rate"
+    }
+  ],
+  "width": 800,
+  "height": 600,
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "Select Year: "
+      }
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "country_name",
+      "type": "nominal",
+      "sort": "-x",
+      "title": "Country"
+    },
+    "x": {
+      "field": "rate",
+      "type": "quantitative",
+      "axis": {
+        "title": "Unemployment Rate (%)",
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "sex",
+      "type": "nominal",
+      "scale": {"domain": ["Male", "Female"], "range": ["#4B9CD3", "#F28E2B"]},
+      "title": "Gender"
+    },
+    "tooltip": [
+      {"field": "country_name", "type": "nominal", "title": "Country"},
+      {"field": "sex", "type": "nominal", "title": "Gender"},
+      {"field": "unemployment_rate", "type": "quantitative", "title": "Unemployment (%)"},
+      {"field": "year", "type": "ordinal"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"grid": false}
+  }
+}
