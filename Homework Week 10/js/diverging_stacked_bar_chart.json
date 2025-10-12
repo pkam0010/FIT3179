@@ -4,7 +4,15 @@
   "data": { "url": "https://pkam0010.github.io/FIT3179/Homework%20Week%2010/data/global_unemployment_gender_cleaned.csv"},
   "transform": [
     {"filter": "datum.Year == selectedYear"},
-    {"calculate": "datum.Male_unemployment_rate * -1", "as": "Male_unemployment_negative"}
+    {"calculate": "datum.Male_unemployment_rate * -1", "as": "Male_unemployment_negative"},
+    {
+      "fold": ["Male_unemployment_negative", "Female_unemployment_rate"],
+      "as": ["Gender", "Rate"]
+    },
+    {
+      "calculate": "datum.Gender == 'Male_unemployment_negative' ? 'Male' : 'Female'",
+      "as": "Gender"
+    }
   ],
   "params": [
     {
@@ -19,51 +27,34 @@
       }
     }
   ],
-  "facet": {
-    "field": "Country",
-    "type": "nominal",
-    "title": "Gender Gap in Unemployment (Top 10 GDP Countries)"
-  },
-  "spec": {
-    "layer": [
-      {
-        "mark": "bar",
-        "encoding": {
-          "x": {
-            "field": "Male_unemployment_negative",
-            "type": "quantitative",
-            "title": "Unemployment Rate (%)",
-            "axis": {"format": ".1f"}
-          },
-          "color": {"value": "#1f77b4"},
-          "tooltip": [
-            {"field": "Country"},
-            {"field": "Year"},
-            {"field": "Male_unemployment_rate", "title": "Male Unemployment Rate(%)"}
-          ]
-        }
-      },
-      {
-        "mark": "bar",
-        "encoding": {
-          "x": {
-            "field": "Female_unemployment_rate",
-            "type": "quantitative",
-            "axis": {"format": ".1f"}
-          },
-          "color": {"value": "#ff7f0e"},
-          "tooltip": [
-            {"field": "Country"},
-            {"field": "Year"},
-            {"field": "Female_unemployment_rate", "title": "Female Unemployment Rate(%)"}
-          ]
-        }
-      }
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "sort": "-x",
+      "title": "Country"
+    },
+    "x": {
+      "field": "Rate",
+      "type": "quantitative",
+      "title": "Unemployment Rate (%)"
+    },
+    "color": {
+      "field": "Gender",
+      "type": "nominal",
+      "scale": {"domain": ["Male", "Female"], "range": ["#7c91e6", "#e8847b"]},
+      "title": "Gender"
+    },
+    "tooltip": [
+      {"field": "Country"},
+      {"field": "Year"},
+      {"field": "Gender"},
+      {"field": "Rate", "title": "Unemployment Rate (%)", "format": ".1f"}
     ]
   },
   "config": {
     "view": {"stroke": "transparent"},
-    "axis": {"grid": false, "labelFontSize": 10, "titleFontSize": 12},
-    "facet": {"spacing": 10}
+    "axis": {"grid": false, "labelFontSize": 10, "titleFontSize": 12}
   }
 }
