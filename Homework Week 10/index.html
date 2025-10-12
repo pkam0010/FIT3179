@@ -17,15 +17,16 @@
 
 <script type="text/javascript">
 
-  var spec2 = "js/map.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
+  var spec1 = "js/map.json";
+  vegaEmbed('#choropleth_map', spec1).then(function(result) {
   }).catch(console.error);
 </script>
 
 <div id="gender-chart"></div>
 
 <script type="text/javascript">
-  vegaEmbed('#vis', 'js/diverging_stacked_bar_chart.json', {actions: false})
+  var spec2 = "js/diverging_stacked_bar_chart.json";
+  vegaEmbed('#vis', spec2, {actions: false})
     .then(console.log)
     .catch(console.warn);
 </script>
