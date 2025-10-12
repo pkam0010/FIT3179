@@ -1,16 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "title": "Gender Gap in Global Unemployment Rates (2015–2024)",
+  "title": "Gender Gap in Global Unemployment Rates of Top 10 GDP countries(2015–2024)",
   "data": { "url": "https://pkam0010.github.io/FIT3179/Homework%20Week%2010/data/global_unemployment_gender_cleaned.csv"},
   "transform": [
-    {"filter": "datum.year == selectedYear"},
-    {
-      "calculate": "datum.sex == 'Male' ? -datum.unemployment_rate : datum.unemployment_rate",
-      "as": "rate"
-    }
+    {"filter": "datum.Year == selectedYear"},
+    {"calculate": "datum.Male_unemployment_rate * -1", "as": "Male_unemployment_negative"}
   ],
-  "width": 800,
-  "height": 600,
   "params": [
     {
       "name": "selectedYear",
@@ -24,37 +19,51 @@
       }
     }
   ],
-  "mark": "bar",
-  "encoding": {
-    "y": {
-      "field": "country_name",
-      "type": "nominal",
-      "sort": "-x",
-      "title": "Country"
-    },
-    "x": {
-      "field": "rate",
-      "type": "quantitative",
-      "axis": {
-        "title": "Unemployment Rate (%)",
-        "format": ".1f"
+  "facet": {
+    "field": "Country",
+    "type": "nominal",
+    "title": "Gender Gap in Unemployment (Top 10 GDP Countries)"
+  },
+  "spec": {
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "Male_unemployment_negative",
+            "type": "quantitative",
+            "title": "Unemployment Rate (%)",
+            "axis": {"format": ".1f"}
+          },
+          "color": {"value": "#1f77b4"},
+          "tooltip": [
+            {"field": "Country"},
+            {"field": "Year"},
+            {"field": "Male_unemployment_rate", "title": "Male Unemployment Rate(%)"}
+          ]
+        }
+      },
+      {
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "Female_unemployment_rate",
+            "type": "quantitative",
+            "axis": {"format": ".1f"}
+          },
+          "color": {"value": "#ff7f0e"},
+          "tooltip": [
+            {"field": "Country"},
+            {"field": "Year"},
+            {"field": "Female_unemployment_rate", "title": "Female Unemployment Rate(%)"}
+          ]
+        }
       }
-    },
-    "color": {
-      "field": "sex",
-      "type": "nominal",
-      "scale": {"domain": ["Male", "Female"], "range": ["#4B9CD3", "#F28E2B"]},
-      "title": "Gender"
-    },
-    "tooltip": [
-      {"field": "country_name", "type": "nominal", "title": "Country"},
-      {"field": "sex", "type": "nominal", "title": "Gender"},
-      {"field": "unemployment_rate", "type": "quantitative", "title": "Unemployment (%)"},
-      {"field": "year", "type": "ordinal"}
     ]
   },
   "config": {
     "view": {"stroke": "transparent"},
-    "axis": {"grid": false}
+    "axis": {"grid": false, "labelFontSize": 10, "titleFontSize": 12},
+    "facet": {"spacing": 10}
   }
 }
