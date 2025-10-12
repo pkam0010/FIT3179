@@ -18,7 +18,7 @@ Burkina Faso,BFA,2015,4.461
 Bangladesh,BGD,2015,4.396
 Bulgaria,BGR,2015,9.143
 Bahrain,BHR,2015,1.16
-"Bahamas, The",BHS,2015,12.0
+"Bahamas, The",BHS,2015,12
 Bosnia and Herzegovina,BIH,2015,27.695
 Belarus,BLR,2015,5.881
 Belize,BLZ,2015,7.578
@@ -167,7 +167,7 @@ Philippines,PHL,2015,3.068
 Papua New Guinea,PNG,2015,2.503
 Poland,POL,2015,7.475
 Pre-demographic dividend,PRE,2015,4.937191701
-Puerto Rico (US),PRI,2015,12.0
+Puerto Rico (US),PRI,2015,12
 "Korea, Dem. People's Rep.",PRK,2015,2.896
 Portugal,PRT,2015,12.447
 Paraguay,PRY,2015,4.556
@@ -245,7 +245,7 @@ Argentina,ARG,2016,8.085
 Armenia,ARM,2016,17.617
 Australia,AUS,2016,5.711
 Austria,AUT,2016,6.064
-Azerbaijan,AZE,2016,5.0
+Azerbaijan,AZE,2016,5
 Burundi,BDI,2016,1.347
 Belgium,BEL,2016,7.83
 Benin,BEN,2016,1.784
@@ -256,7 +256,7 @@ Bahrain,BHR,2016,1.192
 "Bahamas, The",BHS,2016,12.7
 Bosnia and Herzegovina,BIH,2016,25.408
 Belarus,BLR,2016,5.844
-Belize,BLZ,2016,7.0
+Belize,BLZ,2016,7
 Bolivia,BOL,2016,3.498
 Brazil,BRA,2016,11.58
 Barbados,BRB,2016,8.247
@@ -279,7 +279,7 @@ Comoros,COM,2016,4.104
 Cabo Verde,CPV,2016,12.077
 Costa Rica,CRI,2016,8.085
 Caribbean small states,CSS,2016,8.498719006
-Cuba,CUB,2016,2.0
+Cuba,CUB,2016,2
 Cyprus,CYP,2016,13.006
 Czechia,CZE,2016,3.952
 Germany,DEU,2016,4.104
@@ -431,7 +431,7 @@ Small states,SST,2016,8.665295589
 Sao Tome and Principe,STP,2016,9.686
 Suriname,SUR,2016,7.917
 Slovak Republic,SVK,2016,9.679
-Slovenia,SVN,2016,8.0
+Slovenia,SVN,2016,8
 Sweden,SWE,2016,6.99
 Eswatini,SWZ,2016,22.718
 Syrian Arab Republic,SYR,2016,13.795
@@ -480,7 +480,7 @@ Argentina,ARG,2017,8.347
 Armenia,ARM,2017,17.704
 Australia,AUS,2017,5.592
 Austria,AUT,2017,5.561
-Azerbaijan,AZE,2017,5.0
+Azerbaijan,AZE,2017,5
 Burundi,BDI,2017,1.247
 Belgium,BEL,2017,7.09
 Benin,BEN,2017,1.659
@@ -521,7 +521,7 @@ Germany,DEU,2017,3.781
 Djibouti,DJI,2017,26.064
 Denmark,DNK,2017,5.833
 Dominican Republic,DOM,2017,5.832
-Algeria,DZA,2017,12.0
+Algeria,DZA,2017,12
 East Asia & Pacific (excluding high income),EAP,2017,3.911714815
 Early-demographic dividend,EAR,2017,6.745125147
 East Asia & Pacific,EAS,2017,3.865650242
@@ -723,7 +723,7 @@ Burkina Faso,BFA,2018,4.695
 Bangladesh,BGD,2018,4.407
 Bulgaria,BGR,2018,5.211
 Bahrain,BHR,2018,1.2
-"Bahamas, The",BHS,2018,10.0
+"Bahamas, The",BHS,2018,10
 Bosnia and Herzegovina,BIH,2018,18.4
 Belarus,BLR,2018,4.763
 Belize,BLZ,2018,7.896
@@ -950,7 +950,7 @@ Argentina,ARG,2019,9.843
 Armenia,ARM,2019,18.304
 Australia,AUS,2019,5.159
 Austria,AUT,2019,4.56
-Azerbaijan,AZE,2019,5.0
+Azerbaijan,AZE,2019,5
 Burundi,BDI,2019,1.043
 Belgium,BEL,2019,5.364
 Benin,BEN,2019,1.214
@@ -1209,7 +1209,7 @@ Central Europe and the Baltics,CEB,2020,4.361481611
 Switzerland,CHE,2020,4.817
 Channel Islands,CHI,2020,6.863
 Chile,CHL,2020,10.934
-China,CHN,2020,5.0
+China,CHN,2020,5
 Cote d'Ivoire,CIV,2020,2.584
 Cameroon,CMR,2020,3.87
 "Congo, Dem. Rep.",COD,2020,5.345
@@ -1578,7 +1578,7 @@ Papua New Guinea,PNG,2021,3.003
 Poland,POL,2021,3.268
 Pre-demographic dividend,PRE,2021,5.823475559
 Puerto Rico (US),PRI,2021,7.9
-"Korea, Dem. People's Rep.",PRK,2021,3.0
+"Korea, Dem. People's Rep.",PRK,2021,3
 Portugal,PRT,2021,6.577
 Paraguay,PRY,2021,7.311
 West Bank and Gaza,PSE,2021,26.39
@@ -1812,7 +1812,7 @@ Philippines,PHL,2022,2.598
 Papua New Guinea,PNG,2022,2.689
 Poland,POL,2022,2.811
 Pre-demographic dividend,PRE,2022,5.00203737
-Puerto Rico (US),PRI,2022,6.0
+Puerto Rico (US),PRI,2022,6
 "Korea, Dem. People's Rep.",PRK,2022,2.805
 Portugal,PRT,2022,6.011
 Paraguay,PRY,2022,6.755
@@ -2132,7 +2132,7 @@ Bahrain,BHR,2024,1.102
 "Bahamas, The",BHS,2024,8.463
 Bosnia and Herzegovina,BIH,2024,10.723
 Belarus,BLR,2024,3.361
-Belize,BLZ,2024,7.0
+Belize,BLZ,2024,7
 Bolivia,BOL,2024,3.091
 Brazil,BRA,2024,7.634
 Barbados,BRB,2024,7.529
@@ -2327,7 +2327,7 @@ Tanzania,TZA,2024,2.576
 Uganda,UGA,2024,2.941
 Upper middle income,UMC,2024,5.618309945
 Uruguay,URY,2024,8.401
-United States,USA,2024,4.106
+United States of America,USA,2024,4.106
 Uzbekistan,UZB,2024,4.488
 St. Vincent and the Grenadines,VCT,2024,18.056
 "Venezuela, RB",VEN,2024,5.475
