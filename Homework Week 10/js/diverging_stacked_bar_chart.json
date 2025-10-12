@@ -30,40 +30,59 @@
         "min": 2015,
         "max": 2024,
         "step": 1,
-        "name": "Select Year: "
+        "name": "Year: "
       }
     }
   ],
-  "mark": "bar",
-  "encoding": {
-    "y": {
-      "field": "Country",
-      "type": "nominal",
-      "sort": "-x",
-      "title": "Country"
-    },
-    "x": {
-      "field": "signed_rate",
-      "type": "quantitative",
-      "title": "Unemployment Rate (%)",
-      "axis": {
-        "labelExpr": "abs(datum.value)",
-        "format": ".1f"
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Country",
+          "type": "nominal",
+          "sort": "-x",
+          "title": "Country"
+        },
+        "x": {
+          "field": "signed_rate",
+          "type": "quantitative",
+          "title": "Unemployment Rate (%)",
+          "axis": {
+            "labelExpr": "abs(datum.value)",
+            "format": ".1f"
+          }
+        },
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "scale": {"domain": ["Male", "Female"], "range": ["#7c91e6", "#e8847b"]},
+          "title": "Gender"
+        },
+        "tooltip": [
+          {"field": "Country"},
+          {"field": "Year"},
+          {"field": "Gender"},
+          {"field": "Rate", "title": "Unemployment Rate (%)", "format": ".1f"}
+        ]
       }
     },
-    "color": {
-      "field": "Gender",
-      "type": "nominal",
-      "scale": {"domain": ["Male", "Female"], "range": ["#7c91e6", "#e8847b"]},
-      "title": "Gender"
-    },
-    "tooltip": [
-      {"field": "Country"},
-      {"field": "Year"},
-      {"field": "Gender"},
-      {"field": "Rate", "title": "Unemployment Rate (%)", "format": ".1f"}
-    ]
-  },
+    {
+      "mark": {"type": "text", "align": "center", "baseline": "middle", "dx": 0, "dy": -8},
+      "encoding": {
+        "y": {"field": "Country", "type": "nominal", "sort": "-x"},
+        "x": {"field": "signed_rate", "type": "quantitative"},
+        "text": {"field": "Rate", "type": "quantitative", "format": ".1f"},
+        "color": {
+          "condition": {
+            "test": "datum.Gender == 'Male'",
+            "value": "black"
+          },
+          "value": "black"
+        }
+      }
+    }
+  ],
   "config": {
     "view": {"stroke": "transparent"},
     "axis": {"grid": false, "labelFontSize": 10, "titleFontSize": 12}
