@@ -1,19 +1,24 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "title": "Gender Gap in Global Unemployment Rates of Top 10 GDP countries(2015–2024)",
+  "title": "Gender Gap in Global Unemployment Rates of Top 10 GDP countries (2015–2024)",
   "width": 800,
   "height": 400,
-  "data": { "url": "https://pkam0010.github.io/FIT3179/Homework%20Week%2010/data/global_unemployment_gender_cleaned.csv"},
+  "data": {
+    "url": "https://pkam0010.github.io/FIT3179/Homework%20Week%2010/data/global_unemployment_gender_cleaned.csv"
+  },
   "transform": [
     {"filter": "datum.Year == selectedYear"},
-    {"calculate": "datum.Male_unemployment_rate * -1", "as": "Male_unemployment_negative"},
     {
-      "fold": ["Male_unemployment_negative", "Female_unemployment_rate"],
-      "as": ["Gender", "Rate"]
+      "fold": ["Male_unemployment_rate", "Female_unemployment_rate"],
+      "as": ["GenderKey", "Rate"]
     },
     {
-      "calculate": "datum.Gender == 'Male_unemployment_negative' ? 'Male' : 'Female'",
+      "calculate": "datum.GenderKey == 'Male_unemployment_rate' ? 'Male' : 'Female'",
       "as": "Gender"
+    },
+    {
+      "calculate": "datum.Gender == 'Male' ? -datum.Rate : datum.Rate",
+      "as": "signed_rate"
     }
   ],
   "params": [
@@ -38,9 +43,13 @@
       "title": "Country"
     },
     "x": {
-      "field": "Rate",
+      "field": "signed_rate",
       "type": "quantitative",
-      "title": "Unemployment Rate (%)"
+      "title": "Unemployment Rate (%)",
+      "axis": {
+        "labelExpr": "abs(datum.value)",
+        "format": ".1f"
+      }
     },
     "color": {
       "field": "Gender",
