@@ -1,9 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Global Unemployment Rates (2024)",
   "width": "container",
   "height": 500,
   "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "view": {"stroke": "transparent"}
+  },
   "projection": {"type": "equalEarth"},
   "layer": [
     {
