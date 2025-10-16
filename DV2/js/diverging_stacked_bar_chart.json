@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "title": "Gender Gap in Global Unemployment Rates of Top 10 GDP countries (2015–2024)",
-  "width": 800,
-  "height": 400,
+  "width": "container",
+  "height": 500,
+  "autosize": {"type": "fit", "contains": "padding"},
   "data": {
     "url": "https://pkam0010.github.io/FIT3179/Homework%20Week%2010/data/global_unemployment_gender_cleaned.csv"
   },
