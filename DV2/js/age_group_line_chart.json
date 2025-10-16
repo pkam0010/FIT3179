@@ -3,7 +3,6 @@
   "width": "container",
   "height": 400,
   "autosize": {"type": "fit", "contains": "padding"},
-  "config": {"view": {"stroke": "transparent"}},
   "data": {
     "url": "https://pkam0010.github.io/FIT3179/DV2/data/global_unemployment_age_group.csv"
   },
@@ -11,9 +10,12 @@
     {
       "fold": ["2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],
       "as": ["Year","Unemployment Rate"]
+    },
+    {
+      "filter": "datum.country_name == 'Brazil'"
     }
   ],
-  "mark": "line",
+  "mark": {"type": "line", "point": true},
   "encoding": {
     "x": {"field": "Year", "type": "ordinal", "title": "Year"},
     "y": {"field": "Unemployment Rate", "type": "quantitative", "title": "Unemployment Rate (%)"},
@@ -21,7 +23,7 @@
     "tooltip": [
       {"field": "Year"},
       {"field": "age_group", "title": "Age Group"},
-      {"field": "Unemployment Rate", "title": "Unemployment Rate (%)", "format": ".1f"}
+      {"field": "Unemployment Rate", "title": "Unemployment Rate (%)"}
     ]
   }
 }
