@@ -9,7 +9,12 @@
 
 #gender_bar_chart {
   width: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+}
+
+#gender_bar_chart > div {
+  width: 100%;
 }
 
 body,h1,h2,h3,h4,h5 {
