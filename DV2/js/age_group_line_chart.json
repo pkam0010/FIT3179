@@ -3,34 +3,21 @@
   "width": "container",
   "height": 400,
   "autosize": {"type": "fit", "contains": "padding"},
-  "config": {
-    "view": {"stroke": "transparent"}
-  },
+  "config": {"view": {"stroke": "transparent"}},
   "data": {
     "url": "https://pkam0010.github.io/FIT3179/DV2/data/global_unemployment_age_group.csv"
   },
   "transform": [
     {
-      "filter": "datum.sex == 'Both' || datum.sex == 'Total'" 
+      "fold": ["2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],
+      "as": ["Year","Unemployment Rate"]
     }
   ],
   "mark": "line",
   "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "ordinal",
-      "title": "Year"
-    },
-    "y": {
-      "field": "Unemployment Rate",
-      "type": "quantitative",
-      "title": "Unemployment Rate (%)"
-    },
-    "color": {
-      "field": "age_group",
-      "type": "nominal",
-      "title": "Age Group"
-    },
+    "x": {"field": "Year", "type": "ordinal", "title": "Year"},
+    "y": {"field": "Unemployment Rate", "type": "quantitative", "title": "Unemployment Rate (%)"},
+    "color": {"field": "age_group", "type": "nominal", "title": "Age Group"},
     "tooltip": [
       {"field": "Year"},
       {"field": "age_group", "title": "Age Group"},
