@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 400,
+  "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "view": {"stroke": "transparent"}
+  },
+  "data": {
+    "url": "https://pkam0010.github.io/FIT3179/Homework%20Week%2010/data/global_unemployment_age_group.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.sex == 'Both' || datum.sex == 'Total'" 
+    }
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "Unemployment Rate",
+      "type": "quantitative",
+      "title": "Unemployment Rate (%)"
+    },
+    "color": {
+      "field": "age_group",
+      "type": "nominal",
+      "title": "Age Group"
+    },
+    "tooltip": [
+      {"field": "Year"},
+      {"field": "age_group", "title": "Age Group"},
+      {"field": "Unemployment Rate", "title": "Unemployment Rate (%)", "format": ".1f"}
+    ]
+  }
+}

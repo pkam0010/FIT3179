@@ -29,6 +29,11 @@
   width: 100% !important;
 }
 
+#age_group_line_chart {
+  width: 100%;
+  height: auto;
+}
+
 body, h1, h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif;
 }
