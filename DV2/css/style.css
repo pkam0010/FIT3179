@@ -1,13 +1,13 @@
 #choropleth_map {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	width: 100%;
-  	height: auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
-#wrapper, .w3-col.l6.s12, #gender_chart_container, #gender_bar_chart {
+#wrapper,
+.w3-col.l6.s12,
+#gender_chart_container,
+#gender_bar_chart {
   width: 100%;
   max-width: 100%;
 }
@@ -15,11 +15,13 @@
 #gender_chart_container {
   display: block;
   position: relative;
+  margin: 0 auto;
+  padding: 0;
 }
 
 #gender_bar_chart {
   width: 100%;
-  height: 500px;
+  height: auto;
 }
 
 .vega-embed,
@@ -27,6 +29,6 @@
   width: 100% !important;
 }
 
-body,h1,h2,h3,h4,h5 {
-	font-family: "Raleway", sans-serif
+body, h1, h2, h3, h4, h5 {
+  font-family: "Raleway", sans-serif;
 }

@@ -61,14 +61,12 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
 
     <script type="text/javascript">
-      vegaEmbed('#gender_bar_chart', 'js/diverging_stacked_bar_chart.json', {
+    vegaEmbed('#gender_bar_chart', 'js/diverging_stacked_bar_chart.json', {
         actions: false,
-        renderer: 'canvas',
-        width: 680,
-        height: 500
-      }).then(function(result) {
-        // optional: keep view if needed
-      }).catch(console.error);
+        renderer: 'canvas'
+    }).then(function(result) {
+        window.addEventListener('resize', () => result.view.resize());
+    }).catch(console.error);
     </script>
 
     <div class="w3-container">
