@@ -59,9 +59,9 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div id="gender_bar_chart"></div>
 
         <script type="text/javascript">
-            var spec2 = "js/diverging_stacked_bar_chart.json";
-            vegaEmbed('#gender_bar_chart', spec2, {actions: false}).then(function(result) {
-            }).catch(console.error);
+            vegaEmbed('#gender_bar_chart', "js/diverging_stacked_bar_chart.json", {actions: false, renderer: "canvas", width: "container", height: 500, resize: true})
+            .then(function(result) {})
+            .catch(console.error);
         </script>
 
         <div class="w3-container">
