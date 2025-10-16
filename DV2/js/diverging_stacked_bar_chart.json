@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Gender Gap in Global Unemployment Rates of Top 10 GDP countries (2015–2024)",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "https://pkam0010.github.io/FIT3179/Homework%20Week%2010/data/global_unemployment_gender_cleaned.csv"
+  },
+  "transform": [
+    {"filter": "datum.Year == selectedYear"},
+    {
+      "fold": ["Male_unemployment_rate", "Female_unemployment_rate"],
+      "as": ["GenderKey", "Rate"]
+    },
+    {
+      "calculate": "datum.GenderKey == 'Male_unemployment_rate' ? 'Male' : 'Female'",
+      "as": "Gender"
+    },
+    {
+      "calculate": "datum.Gender == 'Male' ? -datum.Rate : datum.Rate",
+      "as": "signed_rate"
+    }
+  ],
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Country",
+          "type": "nominal",
+          "sort": "-x",
+          "title": "Country"
+        },
+        "x": {
+          "field": "signed_rate",
+          "type": "quantitative",
+          "title": "Unemployment Rate (%)",
+          "axis": {
+            "labelExpr": "abs(datum.value)",
+            "format": ".1f"
+          }
+        },
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "scale": {"domain": ["Male", "Female"], "range": ["#7c91e6", "#e8847b"]},
+          "title": "Gender"
+        },
+        "tooltip": [
+          {"field": "Country"},
+          {"field": "Year"},
+          {"field": "Gender"},
+          {"field": "Rate", "title": "Unemployment Rate (%)", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "center", "baseline": "middle", "dx": 0, "dy": -8},
+      "encoding": {
+        "y": {"field": "Country", "type": "nominal", "sort": "-x"},
+        "x": {"field": "signed_rate", "type": "quantitative"},
+        "text": {"field": "Rate", "type": "quantitative", "format": ".1f"},
+        "color": {
+          "condition": {
+            "test": "datum.Gender == 'Male'",
+            "value": "black"
+          },
+          "value": "black"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"grid": false, "labelFontSize": 10, "titleFontSize": 12}
+  }
+}

@@ -1,0 +1,12 @@
+#choropleth_map {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+body,h1,h2,h3,h4,h5 {
+	font-family: "Raleway", sans-serif
+}
