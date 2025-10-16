@@ -4,7 +4,7 @@
   "height": 400,
   "autosize": {"type": "fit", "contains": "padding"},
   "data": {
-    "url": "https://pkam0010.github.io/FIT3179/Homework%20Week%2010/data/global_unemployment_gender_cleaned.csv"
+    "url": "https://pkam0010.github.io/FIT3179/DV2/data/global_unemployment_gender_cleaned.csv"
   },
   "transform": [
     {"filter": "datum.Year == selectedYear"},
