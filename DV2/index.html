@@ -53,23 +53,19 @@ and is wrapped around the whole page content, except for the footer in this exam
 </div>
 
 <div class="w3-col l6 s12">
-    <!-- Blog entry -->
-    <div class="w3-card-4 w3-margin w3-white">
-        <h3 class="w3-center"><b>Global Unemployment Rates of Top 10 GDP countries by gender (2015-2024)</b></h3>
-        <div id="gender_bar_chart"></div>
+  <div class="w3-card-4 w3-margin w3-white">
+    <h3 class="w3-center"><b>Global Unemployment Rates of Top 10 GDP Countries by Gender (2015–2024)</b></h3>
 
-        <script type="text/javascript">
-            vegaEmbed('#gender_bar_chart', "js/diverging_stacked_bar_chart.json", {
-            actions: false
-            }).then(function(result) {
-            }).catch(console.error);
-        </script>
-
-        <div class="w3-container">
-            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        </div>
+    <div id="gender_chart_container">
+      <div id="gender_bar_chart"></div>
     </div>
+
+    <script type="text/javascript">
+      vegaEmbed("#gender_bar_chart", "js/diverging_stacked_bar_chart.json", {
+        actions: false
+      }).then(console.log).catch(console.error);
+    </script>
+  </div>
 </div>
 
  <div class="w3-col l6 s12">

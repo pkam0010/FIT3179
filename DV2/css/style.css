@@ -7,14 +7,24 @@
   	height: auto;
 }
 
-#gender_bar_chart {
+#wrapper, .w3-col.l6.s12, #gender_chart_container, #gender_bar_chart {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  max-width: 100%;
 }
 
-#gender_bar_chart > div {
+#gender_chart_container {
+  display: block;
+  position: relative;
+}
+
+#gender_bar_chart {
   width: 100%;
+  height: 500px;
+}
+
+.vega-embed,
+.vega-embed > div {
+  width: 100% !important;
 }
 
 body,h1,h2,h3,h4,h5 {
