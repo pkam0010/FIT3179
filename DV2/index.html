@@ -56,17 +56,13 @@ and is wrapped around the whole page content, except for the footer in this exam
   <div class="w3-card-4 w3-margin w3-white">
     <h3 class="w3-center"><b>Global Unemployment Rates of Top 10 GDP Countries by Gender (2015–2024)</b></h3>
 
-    <div id="gender_chart_container" style="width:680px; margin:0 auto;">
-      <div id="gender_bar_chart"></div>
+    <div id="gender_chart_container">
+      <div id="gender_bar_chart" style="width:100%; height:auto;"></div>
     </div>
 
     <script type="text/javascript">
-    vegaEmbed('#gender_bar_chart', 'js/diverging_stacked_bar_chart.json', {
-        actions: false,
-        renderer: 'canvas'
-    }).then(function(result) {
-        window.addEventListener('resize', () => result.view.resize());
-    }).catch(console.error);
+        vegaEmbed('#gender_bar_chart', 'js/gender_bar_chart.json', {actions: false}).then(function(result) {
+        }).catch(console.error);
     </script>
 
     <div class="w3-container">
