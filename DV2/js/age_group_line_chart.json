@@ -9,21 +9,82 @@
   "transform": [
     {
       "fold": ["2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],
-      "as": ["Year","Unemployment Rate"]
+      "as": ["Year", "Unemployment Rate"]
     },
     {
-      "filter": "datum.country_name == 'Brazil'"
+      "filter": "datum.country_name == countrySelection"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "mean",
+          "field": "Unemployment Rate",
+          "as": "Avg Unemployment Rate"
+        }
+      ],
+      "groupby": ["country_name", "Year", "age_group"]
+    }
+  ],
+  "params": [
+    {
+      "name": "countrySelection",
+      "value": "Brazil",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Brazil",
+          "Canada",
+          "China",
+          "France",
+          "Germany",
+          "India",
+          "Italy",
+          "Japan",
+          "United Kingdom",
+          "United States"
+        ],
+        "labels": [
+          "Brazil",
+          "Canada",
+          "China",
+          "France",
+          "Germany",
+          "India",
+          "Italy",
+          "Japan",
+          "United Kingdom",
+          "United States"
+        ],
+        "name": "Select Country: "
+      }
     }
   ],
   "mark": {"type": "line", "point": true},
   "encoding": {
-    "x": {"field": "Year", "type": "ordinal", "title": "Year"},
-    "y": {"field": "Unemployment Rate", "type": "quantitative", "title": "Unemployment Rate (%)"},
-    "color": {"field": "age_group", "type": "nominal", "title": "Age Group"},
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "Avg Unemployment Rate",
+      "type": "quantitative",
+      "title": "Unemployment Rate (%)"
+    },
+    "color": {
+      "field": "age_group",
+      "type": "nominal",
+      "title": "Age Group"
+    },
     "tooltip": [
+      {"field": "country_name", "title": "Country"},
       {"field": "Year"},
       {"field": "age_group", "title": "Age Group"},
-      {"field": "Unemployment Rate", "title": "Unemployment Rate (%)"}
+      {
+        "field": "Avg Unemployment Rate",
+        "title": "Unemployment Rate (%)",
+        "format": ".2f"
+      }
     ]
   }
 }
