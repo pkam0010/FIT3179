@@ -26,33 +26,46 @@
           "lookup": "properties.ISO_A3",
           "from": {
             "data": {
-              "url": "https://pkam0010.github.io/FIT3179/DV2/data/global_unemployment_cleaned.csv"
+              "url": "https://pkam0010.github.io/FIT3179/DV2/data/global_unemployment_rate_cleaned.csv"
             },
-            "key": "Country Code",
-            "fields": ["Year", "Unemployment Rate"]
+            "key": "country_code",
+            "fields": ["country", "Year", "unemployment_rate"]
           }
+        },
+        {
+          "filter": "datum.Year == selectedYear"
         }
       ],
       "mark": {"type": "geoshape", "stroke": "black"},
       "encoding": {
         "color": {
           "condition": {
-            "test": "datum['Unemployment Rate'] != null",
-            "field": "Unemployment Rate",
+            "test": "datum['unemployment_rate'] != null",
+            "field": "unemployment_rate",
             "type": "quantitative",
-            "scale": {"scheme": "reds"}
+            "scale": {"scheme": "reds"},
+            "title": "Unemployment Rate (%)"
           },
-          "value": "white"
+          "value": "lightgray"
         },
         "tooltip": [
-          {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-          {
-            "field": "Unemployment Rate",
-            "type": "quantitative",
-            "title": "Unemployment Rate (%)",
-            "format": ".1f"
-          }
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {"field": "unemployment_rate", "type": "quantitative", "format": ".2f", "title": "Unemployment Rate (%)"},
+          {"field": "Year", "type": "ordinal", "title": "Year"}
         ]
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2014,
+      "bind": {
+        "input": "range",
+        "min": 2014,
+        "max": 2024,
+        "step": 1,
+        "name": "Select Year:"
       }
     }
   ]
