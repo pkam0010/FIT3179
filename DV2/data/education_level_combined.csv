@@ -1,0 +1,652 @@
+economy,year,economy_code,unemployment_with_basic_education_(%_of_total_labor_force_with_basic_education),education_level,unemployment_with_intermediate_education_(%_of_total_labor_force_with_intermediate_education),unemployment_with_advanced_education_(%_of_total_labor_force_with_advanced_education)
+Afghanistan,2021,AFG,6.034,Basic,,
+Albania,2023,ALB,9.694,Basic,,
+Algeria,2024,DZA,,Basic,,
+American Samoa,2024,ASM,,Basic,,
+Andorra,2024,AND,,Basic,,
+Angola,2021,AGO,12.224,Basic,,
+Antigua and Barbuda,2023,ATG,4.111,Basic,,
+Argentina,2024,ARG,2.124,Basic,,
+Armenia,2023,ARM,10.27,Basic,,
+Aruba,2024,ABW,,Basic,,
+Australia,2024,AUS,8.442,Basic,,
+Austria,2024,AUT,11.452,Basic,,
+Azerbaijan,2022,AZE,12.31,Basic,,
+"Bahamas, The",2023,BHS,16.86,Basic,,
+Bahrain,2024,BHR,,Basic,,
+Bangladesh,2023,BGD,2.707,Basic,,
+Barbados,2023,BRB,7.462,Basic,,
+Belarus,2023,BLR,10.547,Basic,,
+Belgium,2024,BEL,12.623,Basic,,
+Belize,2019,BLZ,9.937,Basic,,
+Benin,2022,BEN,1.647,Basic,,
+Bermuda,2024,BMU,,Basic,,
+Bhutan,2024,BTN,2.779,Basic,,
+Bolivia,2024,BOL,1.814,Basic,,
+Bosnia and Herzegovina,2023,BIH,13.894,Basic,,
+Botswana,2024,BWA,26.526,Basic,,
+Brazil,2024,BRA,8.988,Basic,,
+British Virgin Islands,2024,VGB,,Basic,,
+Brunei Darussalam,2023,BRN,6.565,Basic,,
+Bulgaria,2024,BGR,13.803,Basic,,
+Burkina Faso,2024,BFA,4.749,Basic,,
+Burundi,2020,BDI,0.659,Basic,,
+Cabo Verde,2019,CPV,10.42,Basic,,
+Cambodia,2023,KHM,0.259,Basic,,
+Cameroon,2021,CMR,4.434,Basic,,
+Canada,2024,CAN,13.758,Basic,,
+Cayman Islands,2015,CYM,5.72,Basic,,
+Central African Republic,2024,CAF,,Basic,,
+Chad,2018,TCD,1.059,Basic,,
+Channel Islands,2024,CHI,,Basic,,
+Chile,2024,CHL,9.106,Basic,,
+China,2024,CHN,,Basic,,
+Colombia,2024,COL,8.6,Basic,,
+Comoros,2021,COM,4.636,Basic,,
+"Congo, Dem. Rep.",2020,COD,1.635,Basic,,
+"Congo, Rep.",2024,COG,,Basic,,
+Costa Rica,2024,CRI,6.376,Basic,,
+Cote d'Ivoire,2022,CIV,2.228,Basic,,
+Croatia,2024,HRV,10.958,Basic,,
+Cuba,2024,CUB,,Basic,,
+Curacao,2020,CUW,25.41,Basic,,
+Cyprus,2024,CYP,5.664,Basic,,
+Czechia,2024,CZE,12.086,Basic,,
+Denmark,2024,DNK,10.716,Basic,,
+Djibouti,2017,DJI,34.827,Basic,,
+Dominica,2024,DMA,,Basic,,
+Dominican Republic,2024,DOM,4.575,Basic,,
+Ecuador,2024,ECU,1.554,Basic,,
+"Egypt, Arab Rep.",2023,EGY,4.313,Basic,,
+El Salvador,2023,SLV,2.485,Basic,,
+Equatorial Guinea,2024,GNQ,,Basic,,
+Eritrea,2024,ERI,,Basic,,
+Estonia,2024,EST,14.744,Basic,,
+Eswatini,2023,SWZ,38.256,Basic,,
+Ethiopia,2021,ETH,4.539,Basic,,
+Faroe Islands,2024,FRO,,Basic,,
+Fiji,2024,FJI,3.623,Basic,,
+Finland,2024,FIN,20.082,Basic,,
+France,2024,FRA,13.238,Basic,,
+French Polynesia,2024,PYF,,Basic,,
+Gabon,2024,GAB,,Basic,,
+"Gambia, The",2023,GMB,6.465,Basic,,
+Georgia,2020,GEO,12.86,Basic,,
+Germany,2024,DEU,6.957,Basic,,
+Ghana,2022,GHA,2.166,Basic,,
+Gibraltar,2024,GIB,,Basic,,
+Greece,2024,GRC,10.946,Basic,,
+Greenland,2024,GRL,,Basic,,
+Grenada,2023,GRD,6.726,Basic,,
+Guam,2024,GUM,,Basic,,
+Guatemala,2023,GTM,2.563,Basic,,
+Guinea,2019,GIN,6.005,Basic,,
+Guinea-Bissau,2022,GNB,3.515,Basic,,
+Guyana,2019,GUY,13.012,Basic,,
+Haiti,2024,HTI,,Basic,,
+Honduras,2024,HND,4.43,Basic,,
+"Hong Kong SAR, China",2024,HKG,3.027,Basic,,
+Hungary,2024,HUN,13.726,Basic,,
+Iceland,2024,ISL,6.554,Basic,,
+India,2024,IND,2.281,Basic,,
+Indonesia,2023,IDN,2.051,Basic,,
+"Iran, Islamic Rep.",2023,IRN,5.308,Basic,,
+Iraq,2021,IRQ,14.662,Basic,,
+Ireland,2024,IRL,7.412,Basic,,
+Isle of Man,2024,IMN,,Basic,,
+Israel,2024,ISR,4.27,Basic,,
+Italy,2024,ITA,9.613,Basic,,
+Jamaica,2023,JAM,1.389,Basic,,
+Japan,2024,JPN,,Basic,,
+Jordan,2023,JOR,18.633,Basic,,
+Kazakhstan,2017,KAZ,6.7,Basic,,
+Kenya,2022,KEN,3.795,Basic,,
+Kiribati,2023,KIR,2.603,Basic,,
+"Korea, Dem. People's Rep.",2024,PRK,,Basic,,
+"Korea, Rep.",2024,KOR,3.324,Basic,,
+Kosovo,2023,XKX,20.219,Basic,,
+Kuwait,2016,KWT,0.67,Basic,,
+Kyrgyz Republic,2018,KGZ,6.45,Basic,,
+Lao PDR,2022,LAO,0.94,Basic,,
+Latvia,2024,LVA,14.869,Basic,,
+Lebanon,2019,LBN,9.544,Basic,,
+Lesotho,2024,LSO,18.023,Basic,,
+Liberia,2017,LBR,4.612,Basic,,
+Libya,2024,LBY,,Basic,,
+Liechtenstein,2024,LIE,,Basic,,
+Lithuania,2024,LTU,17.263,Basic,,
+Luxembourg,2024,LUX,11.306,Basic,,
+"Macao SAR, China",2016,MAC,2.28,Basic,,
+Madagascar,2015,MDG,1.139,Basic,,
+Malawi,2020,MWI,0.703,Basic,,
+Malaysia,2022,MYS,3.59,Basic,,
+Maldives,2019,MDV,5.182,Basic,,
+Mali,2022,MLI,3.181,Basic,,
+Malta,2024,MLT,4.15,Basic,,
+Marshall Islands,2021,MHL,12.795,Basic,,
+Mauritania,2019,MRT,20.068,Basic,,
+Mauritius,2023,MUS,5.781,Basic,,
+Mexico,2024,MEX,2.261,Basic,,
+"Micronesia, Fed. Sts.",2024,FSM,,Basic,,
+Moldova,2024,MDA,1.1,Basic,,
+Monaco,2016,MCO,8.13,Basic,,
+Mongolia,2023,MNG,4.252,Basic,,
+Montenegro,2023,MNE,19.236,Basic,,
+Morocco,2022,MAR,13.05,Basic,,
+Mozambique,2022,MOZ,8.86,Basic,,
+Myanmar,2020,MMR,1.161,Basic,,
+Namibia,2018,NAM,17.498,Basic,,
+Nauru,2021,NRU,5.756,Basic,,
+Nepal,2017,NPL,9.809,Basic,,
+Netherlands,2024,NLD,5.941,Basic,,
+New Caledonia,2022,NCL,21.079,Basic,,
+New Zealand,2020,NZL,6.75,Basic,,
+Nicaragua,2024,NIC,,Basic,,
+Niger,2022,NER,0.795,Basic,,
+Nigeria,2024,NGA,1.749,Basic,,
+North Macedonia,2024,MKD,19.03,Basic,,
+Northern Mariana Islands,2024,MNP,,Basic,,
+Norway,2024,NOR,10.008,Basic,,
+Oman,2021,OMN,0.37,Basic,,
+Pakistan,2021,PAK,5.148,Basic,,
+Palau,2020,PLW,1.475,Basic,,
+Panama,2024,PAN,6.789,Basic,,
+Papua New Guinea,2022,PNG,2.662,Basic,,
+Paraguay,2017,PRY,4.99,Basic,,
+Peru,2024,PER,3.931,Basic,,
+Philippines,2023,PHL,1.892,Basic,,
+Poland,2024,POL,4.552,Basic,,
+Portugal,2024,PRT,7.176,Basic,,
+Puerto Rico,2020,PRI,29.082,Basic,,
+Qatar,2021,QAT,0.05,Basic,,
+Romania,2024,ROU,14.806,Basic,,
+Russian Federation,2024,RUS,6.638,Basic,,
+Rwanda,2024,RWA,10.737,Basic,,
+Samoa,2022,WSM,5.118,Basic,,
+San Marino,2022,SMR,4.12,Basic,,
+Sao Tome and Principe,2017,STP,9.802,Basic,,
+Saudi Arabia,2024,SAU,0.99,Basic,,
+Senegal,2024,SEN,7.817,Basic,,
+Serbia,2024,SRB,8.019,Basic,,
+Seychelles,2024,SYC,4.014,Basic,,
+Sierra Leone,2018,SLE,4.096,Basic,,
+Singapore,2024,SGP,2.633,Basic,,
+Sint Maarten (Dutch part),2024,SXM,,Basic,,
+Slovak Republic,2024,SVK,40.088,Basic,,
+Slovenia,2024,SVN,7.98,Basic,,
+Solomon Islands,2024,SLB,,Basic,,
+Somalia,2019,SOM,19.871,Basic,,
+South Africa,2024,ZAF,39.283,Basic,,
+South Sudan,2024,SSD,,Basic,,
+Spain,2024,ESP,16.503,Basic,,
+Sri Lanka,2022,LKA,3.112,Basic,,
+St. Kitts and Nevis,2024,KNA,,Basic,,
+St. Lucia,2024,LCA,11.95,Basic,,
+St. Martin (French part),2024,MAF,,Basic,,
+St. Vincent and the Grenadines,2024,VCT,,Basic,,
+Sudan,2022,SDN,9.672,Basic,,
+Suriname,2016,SUR,9.141,Basic,,
+Sweden,2024,SWE,25.732,Basic,,
+Switzerland,2024,CHE,8.368,Basic,,
+Syrian Arab Republic,2024,SYR,,Basic,,
+Tajikistan,2024,TJK,,Basic,,
+Tanzania,2020,TZA,1.433,Basic,,
+Thailand,2024,THA,0.509,Basic,,
+Timor-Leste,2022,TLS,2.064,Basic,,
+Togo,2022,TGO,1.738,Basic,,
+Tonga,2023,TON,1.621,Basic,,
+Trinidad and Tobago,2023,TTO,3.705,Basic,,
+Tunisia,2023,TUN,14.236,Basic,,
+Turkiye,2024,TUR,7.434,Basic,,
+Turkmenistan,2024,TKM,,Basic,,
+Turks and Caicos Islands,2024,TCA,,Basic,,
+Tuvalu,2022,TUV,11.654,Basic,,
+Uganda,2021,UGA,1.548,Basic,,
+Ukraine,2021,UKR,11.734,Basic,,
+United Arab Emirates,2023,ARE,1.232,Basic,,
+United Kingdom,2024,GBR,7.196,Basic,,
+United States,2024,USA,6.501,Basic,,
+Uruguay,2024,URY,9.789,Basic,,
+Uzbekistan,2024,UZB,,Basic,,
+Vanuatu,2020,VUT,3.638,Basic,,
+"Venezuela, RB",2017,VEN,3.943,Basic,,
+Vietnam,2023,VNM,1.253,Basic,,
+Virgin Islands (U.S.),2024,VIR,,Basic,,
+West Bank and Gaza,2024,PSE,36.677,Basic,,
+"Yemen, Rep.",2024,YEM,,Basic,,
+Zambia,2023,ZMB,3.688,Basic,,
+Zimbabwe,2023,ZWE,8.493,Basic,,
+Afghanistan,2021,AFG,,Intermediate,9.459,
+Albania,2023,ALB,,Intermediate,12.823,
+Algeria,2024,DZA,,Intermediate,,
+American Samoa,2024,ASM,,Intermediate,,
+Andorra,2024,AND,,Intermediate,,
+Angola,2021,AGO,,Intermediate,29.403,
+Antigua and Barbuda,2023,ATG,,Intermediate,5.738,
+Argentina,2024,ARG,,Intermediate,2.019,
+Armenia,2023,ARM,,Intermediate,8.958,
+Aruba,2024,ABW,,Intermediate,,
+Australia,2024,AUS,,Intermediate,4.283,
+Austria,2024,AUT,,Intermediate,4.703,
+Azerbaijan,2022,AZE,,Intermediate,5.13,
+"Bahamas, The",2023,BHS,,Intermediate,9.774,
+Bahrain,2024,BHR,,Intermediate,,
+Bangladesh,2023,BGD,,Intermediate,4.448,
+Barbados,2023,BRB,,Intermediate,7.434,
+Belarus,2023,BLR,,Intermediate,4.0,
+Belgium,2024,BEL,,Intermediate,6.563,
+Belize,2019,BLZ,,Intermediate,10.102,
+Benin,2022,BEN,,Intermediate,4.622,
+Bermuda,2024,BMU,,Intermediate,,
+Bhutan,2024,BTN,,Intermediate,9.787,
+Bolivia,2024,BOL,,Intermediate,3.34,
+Bosnia and Herzegovina,2023,BIH,,Intermediate,11.003,
+Botswana,2024,BWA,,Intermediate,29.541,
+Brazil,2024,BRA,,Intermediate,7.675,
+British Virgin Islands,2024,VGB,,Intermediate,,
+Brunei Darussalam,2023,BRN,,Intermediate,4.633,
+Bulgaria,2024,BGR,,Intermediate,4.126,
+Burkina Faso,2024,BFA,,Intermediate,11.317,
+Burundi,2020,BDI,,Intermediate,7.009,
+Cabo Verde,2019,CPV,,Intermediate,13.63,
+Cambodia,2020,KHM,,Intermediate,0.34,
+Cameroon,2021,CMR,,Intermediate,11.416,
+Canada,2024,CAN,,Intermediate,8.421,
+Cayman Islands,2015,CYM,,Intermediate,4.82,
+Central African Republic,2024,CAF,,Intermediate,,
+Chad,2018,TCD,,Intermediate,3.471,
+Channel Islands,2024,CHI,,Intermediate,,
+Chile,2024,CHL,,Intermediate,9.673,
+China,2024,CHN,,Intermediate,,
+Colombia,2024,COL,,Intermediate,11.228,
+Comoros,2021,COM,,Intermediate,7.011,
+"Congo, Dem. Rep.",2020,COD,,Intermediate,7.492,
+"Congo, Rep.",2024,COG,,Intermediate,,
+Costa Rica,2024,CRI,,Intermediate,9.535,
+Cote d'Ivoire,2022,CIV,,Intermediate,6.252,
+Croatia,2024,HRV,,Intermediate,5.449,
+Cuba,2024,CUB,,Intermediate,,
+Curacao,2020,CUW,,Intermediate,22.53,
+Cyprus,2024,CYP,,Intermediate,5.818,
+Czechia,2024,CZE,,Intermediate,2.384,
+Denmark,2024,DNK,,Intermediate,5.482,
+Djibouti,2017,DJI,,Intermediate,27.474,
+Dominica,2024,DMA,,Intermediate,,
+Dominican Republic,2024,DOM,,Intermediate,7.316,
+Ecuador,2024,ECU,,Intermediate,5.089,
+"Egypt, Arab Rep.",2023,EGY,,Intermediate,6.085,
+El Salvador,2023,SLV,,Intermediate,4.963,
+Equatorial Guinea,2024,GNQ,,Intermediate,,
+Eritrea,2024,ERI,,Intermediate,,
+Estonia,2024,EST,,Intermediate,8.356,
+Eswatini,2023,SWZ,,Intermediate,25.145,
+Ethiopia,2021,ETH,,Intermediate,7.677,
+Faroe Islands,2024,FRO,,Intermediate,,
+Fiji,2024,FJI,,Intermediate,7.052,
+Finland,2024,FIN,,Intermediate,8.732,
+France,2024,FRA,,Intermediate,8.173,
+French Polynesia,2024,PYF,,Intermediate,,
+Gabon,2024,GAB,,Intermediate,,
+"Gambia, The",2023,GMB,,Intermediate,11.404,
+Georgia,2020,GEO,,Intermediate,11.312,
+Germany,2024,DEU,,Intermediate,2.793,
+Ghana,2022,GHA,,Intermediate,5.999,
+Gibraltar,2024,GIB,,Intermediate,,
+Greece,2024,GRC,,Intermediate,11.79,
+Greenland,2024,GRL,,Intermediate,,
+Grenada,2023,GRD,,Intermediate,7.283,
+Guam,2024,GUM,,Intermediate,,
+Guatemala,2023,GTM,,Intermediate,3.817,
+Guinea,2019,GIN,,Intermediate,18.253,
+Guinea-Bissau,2022,GNB,,Intermediate,7.134,
+Guyana,2019,GUY,,Intermediate,16.096,
+Haiti,2024,HTI,,Intermediate,,
+Honduras,2024,HND,,Intermediate,7.892,
+"Hong Kong SAR, China",2024,HKG,,Intermediate,3.063,
+Hungary,2024,HUN,,Intermediate,4.311,
+Iceland,2024,ISL,,Intermediate,2.737,
+India,2024,IND,,Intermediate,5.87,
+Indonesia,2023,IDN,,Intermediate,5.792,
+"Iran, Islamic Rep.",2023,IRN,,Intermediate,9.142,
+Iraq,2021,IRQ,,Intermediate,13.4,
+Ireland,2024,IRL,,Intermediate,5.033,
+Isle of Man,2024,IMN,,Intermediate,,
+Israel,2024,ISR,,Intermediate,3.152,
+Italy,2024,ITA,,Intermediate,6.356,
+Jamaica,2023,JAM,,Intermediate,4.038,
+Japan,2020,JPN,,Intermediate,3.21,
+Jordan,2023,JOR,,Intermediate,9.055,
+Kazakhstan,2017,KAZ,,Intermediate,5.3,
+Kenya,2022,KEN,,Intermediate,6.5,
+Kiribati,2023,KIR,,Intermediate,3.839,
+"Korea, Dem. People's Rep.",2024,PRK,,Intermediate,,
+"Korea, Rep.",2024,KOR,,Intermediate,2.644,
+Kosovo,2023,XKX,,Intermediate,9.703,
+Kuwait,2016,KWT,,Intermediate,6.08,
+Kyrgyz Republic,2018,KGZ,,Intermediate,6.2,
+Lao PDR,2022,LAO,,Intermediate,1.963,
+Latvia,2024,LVA,,Intermediate,7.953,
+Lebanon,2019,LBN,,Intermediate,12.329,
+Lesotho,2024,LSO,,Intermediate,21.988,
+Liberia,2017,LBR,,Intermediate,11.158,
+Libya,2024,LBY,,Intermediate,,
+Liechtenstein,2024,LIE,,Intermediate,,
+Lithuania,2024,LTU,,Intermediate,9.286,
+Luxembourg,2024,LUX,,Intermediate,7.334,
+"Macao SAR, China",2016,MAC,,Intermediate,1.82,
+Madagascar,2015,MDG,,Intermediate,4.933,
+Malawi,2020,MWI,,Intermediate,2.698,
+Malaysia,2022,MYS,,Intermediate,4.08,
+Maldives,2019,MDV,,Intermediate,4.776,
+Mali,2022,MLI,,Intermediate,7.992,
+Malta,2024,MLT,,Intermediate,3.455,
+Marshall Islands,2021,MHL,,Intermediate,9.449,
+Mauritania,2019,MRT,,Intermediate,13.986,
+Mauritius,2023,MUS,,Intermediate,6.45,
+Mexico,2024,MEX,,Intermediate,3.238,
+"Micronesia, Fed. Sts.",2024,FSM,,Intermediate,,
+Moldova,2024,MDA,,Intermediate,1.2,
+Monaco,2016,MCO,,Intermediate,6.46,
+Mongolia,2023,MNG,,Intermediate,6.564,
+Montenegro,2020,MNE,,Intermediate,18.05,
+Morocco,2022,MAR,,Intermediate,24.96,
+Mozambique,2022,MOZ,,Intermediate,24.241,
+Myanmar,2020,MMR,,Intermediate,0.438,
+Namibia,2018,NAM,,Intermediate,23.942,
+Nauru,2021,NRU,,Intermediate,4.582,
+Nepal,2017,NPL,,Intermediate,14.464,
+Netherlands,2024,NLD,,Intermediate,3.327,
+New Caledonia,2022,NCL,,Intermediate,11.889,
+New Zealand,2020,NZL,,Intermediate,4.93,
+Nicaragua,2024,NIC,,Intermediate,,
+Niger,2022,NER,,Intermediate,4.957,
+Nigeria,2024,NGA,,Intermediate,3.477,
+North Macedonia,2024,MKD,,Intermediate,12.806,
+Northern Mariana Islands,2024,MNP,,Intermediate,,
+Norway,2024,NOR,,Intermediate,2.471,
+Oman,2021,OMN,,Intermediate,3.18,
+Pakistan,2021,PAK,,Intermediate,9.665,
+Palau,2020,PLW,,Intermediate,0.826,
+Panama,2024,PAN,,Intermediate,12.028,
+Papua New Guinea,2022,PNG,,Intermediate,5.351,
+Paraguay,2017,PRY,,Intermediate,5.928,
+Peru,2024,PER,,Intermediate,6.138,
+Philippines,2023,PHL,,Intermediate,4.551,
+Poland,2024,POL,,Intermediate,3.422,
+Portugal,2024,PRT,,Intermediate,7.345,
+Puerto Rico,2020,PRI,,Intermediate,20.575,
+Qatar,2021,QAT,,Intermediate,0.19,
+Romania,2024,ROU,,Intermediate,4.401,
+Russian Federation,2024,RUS,,Intermediate,2.723,
+Rwanda,2024,RWA,,Intermediate,17.703,
+Samoa,2022,WSM,,Intermediate,7.331,
+San Marino,2022,SMR,,Intermediate,5.66,
+Sao Tome and Principe,2017,STP,,Intermediate,7.191,
+Saudi Arabia,2024,SAU,,Intermediate,4.066,
+Senegal,2024,SEN,,Intermediate,18.361,
+Serbia,2024,SRB,,Intermediate,7.614,
+Seychelles,2024,SYC,,Intermediate,2.422,
+Sierra Leone,2018,SLE,,Intermediate,5.325,
+Singapore,2024,SGP,,Intermediate,3.333,
+Sint Maarten (Dutch part),2024,SXM,,Intermediate,,
+Slovak Republic,2024,SVK,,Intermediate,4.46,
+Slovenia,2024,SVN,,Intermediate,4.102,
+Solomon Islands,2024,SLB,,Intermediate,,
+Somalia,2019,SOM,,Intermediate,14.701,
+South Africa,2024,ZAF,,Intermediate,33.911,
+South Sudan,2024,SSD,,Intermediate,,
+Spain,2024,ESP,,Intermediate,12.27,
+Sri Lanka,2022,LKA,,Intermediate,7.123,
+St. Kitts and Nevis,2024,KNA,,Intermediate,,
+St. Lucia,2022,LCA,,Intermediate,16.145,
+St. Martin (French part),2024,MAF,,Intermediate,,
+St. Vincent and the Grenadines,2024,VCT,,Intermediate,,
+Sudan,2022,SDN,,Intermediate,11.608,
+Suriname,2016,SUR,,Intermediate,5.377,
+Sweden,2024,SWE,,Intermediate,6.352,
+Switzerland,2024,CHE,,Intermediate,3.806,
+Syrian Arab Republic,2024,SYR,,Intermediate,,
+Tajikistan,2024,TJK,,Intermediate,,
+Tanzania,2020,TZA,,Intermediate,5.031,
+Thailand,2024,THA,,Intermediate,0.987,
+Timor-Leste,2022,TLS,,Intermediate,3.091,
+Togo,2022,TGO,,Intermediate,5.587,
+Tonga,2023,TON,,Intermediate,2.877,
+Trinidad and Tobago,2023,TTO,,Intermediate,3.577,
+Tunisia,2023,TUN,,Intermediate,12.566,
+Turkiye,2024,TUR,,Intermediate,10.408,
+Turkmenistan,2024,TKM,,Intermediate,,
+Turks and Caicos Islands,2024,TCA,,Intermediate,,
+Tuvalu,2022,TUV,,Intermediate,9.212,
+Uganda,2021,UGA,,Intermediate,5.532,
+Ukraine,2021,UKR,,Intermediate,10.143,
+United Arab Emirates,2023,ARE,,Intermediate,2.786,
+United Kingdom,2024,GBR,,Intermediate,5.421,
+United States,2024,USA,,Intermediate,5.442,
+Uruguay,2024,URY,,Intermediate,8.258,
+Uzbekistan,2020,UZB,,Intermediate,6.222,
+Vanuatu,2020,VUT,,Intermediate,5.027,
+"Venezuela, RB",2017,VEN,,Intermediate,5.744,
+Vietnam,2023,VNM,,Intermediate,1.924,
+Virgin Islands (U.S.),2024,VIR,,Intermediate,,
+West Bank and Gaza,2024,PSE,,Intermediate,27.11,
+"Yemen, Rep.",2024,YEM,,Intermediate,,
+Zambia,2023,ZMB,,Intermediate,11.021,
+Zimbabwe,2023,ZWE,,Intermediate,11.225,
+Afghanistan,2021,AFG,,Advanced,,9.797
+Albania,2023,ALB,,Advanced,,8.947
+Algeria,2024,DZA,,Advanced,,
+American Samoa,2024,ASM,,Advanced,,
+Andorra,2024,AND,,Advanced,,
+Angola,2021,AGO,,Advanced,,17.111
+Antigua and Barbuda,2023,ATG,,Advanced,,5.55
+Argentina,2024,ARG,,Advanced,,0.708
+Armenia,2023,ARM,,Advanced,,7.505
+Aruba,2024,ABW,,Advanced,,
+Australia,2024,AUS,,Advanced,,2.468
+Austria,2024,AUT,,Advanced,,3.609
+Azerbaijan,2022,AZE,,Advanced,,5.11
+"Bahamas, The",2023,BHS,,Advanced,,3.101
+Bahrain,2024,BHR,,Advanced,,
+Bangladesh,2023,BGD,,Advanced,,10.798
+Barbados,2023,BRB,,Advanced,,2.926
+Belarus,2023,BLR,,Advanced,,2.204
+Belgium,2024,BEL,,Advanced,,3.089
+Belize,2019,BLZ,,Advanced,,7.019
+Benin,2022,BEN,,Advanced,,10.297
+Bermuda,2024,BMU,,Advanced,,
+Bhutan,2024,BTN,,Advanced,,5.761
+Bolivia,2024,BOL,,Advanced,,4.375
+Bosnia and Herzegovina,2023,BIH,,Advanced,,8.598
+Botswana,2024,BWA,,Advanced,,19.885
+Brazil,2024,BRA,,Advanced,,3.826
+British Virgin Islands,2024,VGB,,Advanced,,
+Brunei Darussalam,2023,BRN,,Advanced,,6.138
+Bulgaria,2024,BGR,,Advanced,,1.616
+Burkina Faso,2024,BFA,,Advanced,,14.688
+Burundi,2020,BDI,,Advanced,,9.208
+Cabo Verde,2019,CPV,,Advanced,,7.13
+Cambodia,2019,KHM,,Advanced,,0.982
+Cameroon,2021,CMR,,Advanced,,18.774
+Canada,2024,CAN,,Advanced,,4.933
+Cayman Islands,2015,CYM,,Advanced,,2.52
+Central African Republic,2024,CAF,,Advanced,,
+Chad,2018,TCD,,Advanced,,7.576
+Channel Islands,2024,CHI,,Advanced,,
+Chile,2024,CHL,,Advanced,,7.128
+China,2024,CHN,,Advanced,,
+Colombia,2024,COL,,Advanced,,10.024
+Comoros,2021,COM,,Advanced,,10.969
+"Congo, Dem. Rep.",2020,COD,,Advanced,,5.496
+"Congo, Rep.",2024,COG,,Advanced,,
+Costa Rica,2024,CRI,,Advanced,,5.101
+Cote d'Ivoire,2022,CIV,,Advanced,,10.51
+Croatia,2024,HRV,,Advanced,,3.295
+Cuba,2024,CUB,,Advanced,,
+Curacao,2020,CUW,,Advanced,,10.58
+Cyprus,2024,CYP,,Advanced,,3.982
+Czechia,2024,CZE,,Advanced,,1.392
+Denmark,2024,DNK,,Advanced,,4.683
+Djibouti,2017,DJI,,Advanced,,16.29
+Dominica,2024,DMA,,Advanced,,
+Dominican Republic,2024,DOM,,Advanced,,3.475
+Ecuador,2024,ECU,,Advanced,,5.897
+"Egypt, Arab Rep.",2023,EGY,,Advanced,,14.175
+El Salvador,2023,SLV,,Advanced,,3.844
+Equatorial Guinea,2024,GNQ,,Advanced,,
+Eritrea,2024,ERI,,Advanced,,
+Estonia,2024,EST,,Advanced,,4.658
+Eswatini,2023,SWZ,,Advanced,,22.772
+Ethiopia,2021,ETH,,Advanced,,10.561
+Faroe Islands,2024,FRO,,Advanced,,
+Fiji,2024,FJI,,Advanced,,5.014
+Finland,2024,FIN,,Advanced,,4.516
+France,2024,FRA,,Advanced,,5.016
+French Polynesia,2024,PYF,,Advanced,,
+Gabon,2024,GAB,,Advanced,,
+"Gambia, The",2023,GMB,,Advanced,,10.724
+Georgia,2020,GEO,,Advanced,,12.308
+Germany,2024,DEU,,Advanced,,2.565
+Ghana,2022,GHA,,Advanced,,5.084
+Gibraltar,2024,GIB,,Advanced,,
+Greece,2024,GRC,,Advanced,,7.251
+Greenland,2024,GRL,,Advanced,,
+Grenada,2023,GRD,,Advanced,,4.246
+Guam,2024,GUM,,Advanced,,
+Guatemala,2023,GTM,,Advanced,,4.399
+Guinea,2019,GIN,,Advanced,,17.519
+Guinea-Bissau,2022,GNB,,Advanced,,6.132
+Guyana,2019,GUY,,Advanced,,6.133
+Haiti,2024,HTI,,Advanced,,
+Honduras,2024,HND,,Advanced,,5.774
+"Hong Kong SAR, China",2024,HKG,,Advanced,,2.867
+Hungary,2024,HUN,,Advanced,,1.821
+Iceland,2024,ISL,,Advanced,,2.252
+India,2024,IND,,Advanced,,13.47
+Indonesia,2023,IDN,,Advanced,,3.571
+"Iran, Islamic Rep.",2023,IRN,,Advanced,,11.868
+Iraq,2021,IRQ,,Advanced,,18.841
+Ireland,2024,IRL,,Advanced,,3.15
+Isle of Man,2024,IMN,,Advanced,,
+Israel,2024,ISR,,Advanced,,2.363
+Italy,2024,ITA,,Advanced,,3.366
+Jamaica,2023,JAM,,Advanced,,1.682
+Japan,2020,JPN,,Advanced,,2.47
+Jordan,2023,JOR,,Advanced,,26.608
+Kazakhstan,2017,KAZ,,Advanced,,3.49
+Kenya,2022,KEN,,Advanced,,7.675
+Kiribati,2020,KIR,,Advanced,,2.802
+"Korea, Dem. People's Rep.",2024,PRK,,Advanced,,
+"Korea, Rep.",2024,KOR,,Advanced,,2.748
+Kosovo,2023,XKX,,Advanced,,7.591
+Kuwait,2016,KWT,,Advanced,,5.68
+Kyrgyz Republic,2018,KGZ,,Advanced,,5.93
+Lao PDR,2022,LAO,,Advanced,,2.796
+Latvia,2024,LVA,,Advanced,,3.997
+Lebanon,2019,LBN,,Advanced,,14.469
+Lesotho,2024,LSO,,Advanced,,19.682
+Liberia,2017,LBR,,Advanced,,8.385
+Libya,2024,LBY,,Advanced,,
+Liechtenstein,2024,LIE,,Advanced,,
+Lithuania,2024,LTU,,Advanced,,4.13
+Luxembourg,2024,LUX,,Advanced,,4.784
+"Macao SAR, China",2016,MAC,,Advanced,,1.49
+Madagascar,2015,MDG,,Advanced,,8.451
+Malawi,2020,MWI,,Advanced,,2.336
+Malaysia,2022,MYS,,Advanced,,3.47
+Maldives,2019,MDV,,Advanced,,2.603
+Mali,2022,MLI,,Advanced,,12.693
+Malta,2024,MLT,,Advanced,,2.07
+Marshall Islands,2021,MHL,,Advanced,,1.813
+Mauritania,2019,MRT,,Advanced,,12.767
+Mauritius,2023,MUS,,Advanced,,3.793
+Mexico,2024,MEX,,Advanced,,3.21
+"Micronesia, Fed. Sts.",2024,FSM,,Advanced,,
+Moldova,2024,MDA,,Advanced,,2.372
+Monaco,2016,MCO,,Advanced,,6.17
+Mongolia,2023,MNG,,Advanced,,3.805
+Montenegro,2023,MNE,,Advanced,,8.864
+Morocco,2022,MAR,,Advanced,,25.85
+Mozambique,2022,MOZ,,Advanced,,9.301
+Myanmar,2020,MMR,,Advanced,,0.78
+Namibia,2018,NAM,,Advanced,,12.18
+Nauru,2021,NRU,,Advanced,,2.283
+Nepal,2017,NPL,,Advanced,,8.325
+Netherlands,2024,NLD,,Advanced,,2.771
+New Caledonia,2022,NCL,,Advanced,,3.372
+New Zealand,2020,NZL,,Advanced,,2.93
+Nicaragua,2024,NIC,,Advanced,,
+Niger,2022,NER,,Advanced,,4.617
+Nigeria,2024,NGA,,Advanced,,9.197
+North Macedonia,2024,MKD,,Advanced,,7.299
+Northern Mariana Islands,2024,MNP,,Advanced,,
+Norway,2024,NOR,,Advanced,,2.712
+Oman,2021,OMN,,Advanced,,4.52
+Pakistan,2021,PAK,,Advanced,,16.149
+Palau,2020,PLW,,Advanced,,0.509
+Panama,2024,PAN,,Advanced,,7.04
+Papua New Guinea,2022,PNG,,Advanced,,4.244
+Paraguay,2017,PRY,,Advanced,,2.762
+Peru,2024,PER,,Advanced,,5.81
+Philippines,2023,PHL,,Advanced,,3.352
+Poland,2024,POL,,Advanced,,1.35
+Portugal,2024,PRT,,Advanced,,4.651
+Puerto Rico,2020,PRI,,Advanced,,9.296
+Qatar,2021,QAT,,Advanced,,0.28
+Romania,2024,ROU,,Advanced,,1.904
+Russian Federation,2024,RUS,,Advanced,,1.467
+Rwanda,2024,RWA,,Advanced,,11.354
+Samoa,2022,WSM,,Advanced,,3.181
+San Marino,2022,SMR,,Advanced,,6.54
+Sao Tome and Principe,2024,STP,,Advanced,,
+Saudi Arabia,2024,SAU,,Advanced,,5.108
+Senegal,2024,SEN,,Advanced,,13.61
+Serbia,2024,SRB,,Advanced,,5.931
+Seychelles,2024,SYC,,Advanced,,1.73
+Sierra Leone,2018,SLE,,Advanced,,4.867
+Singapore,2024,SGP,,Advanced,,2.797
+Sint Maarten (Dutch part),2024,SXM,,Advanced,,
+Slovak Republic,2024,SVK,,Advanced,,2.024
+Slovenia,2024,SVN,,Advanced,,2.064
+Solomon Islands,2024,SLB,,Advanced,,
+Somalia,2019,SOM,,Advanced,,18.958
+South Africa,2024,ZAF,,Advanced,,12.771
+South Sudan,2024,SSD,,Advanced,,
+Spain,2024,ESP,,Advanced,,6.899
+Sri Lanka,2022,LKA,,Advanced,,5.366
+St. Kitts and Nevis,2024,KNA,,Advanced,,
+St. Lucia,2024,LCA,,Advanced,,6.739
+St. Martin (French part),2024,MAF,,Advanced,,
+St. Vincent and the Grenadines,2024,VCT,,Advanced,,
+Sudan,2022,SDN,,Advanced,,22.381
+Suriname,2016,SUR,,Advanced,,3.606
+Sweden,2024,SWE,,Advanced,,4.762
+Switzerland,2024,CHE,,Advanced,,3.414
+Syrian Arab Republic,2024,SYR,,Advanced,,
+Tajikistan,2016,TJK,,Advanced,,0.241
+Tanzania,2020,TZA,,Advanced,,6.36
+Thailand,2024,THA,,Advanced,,1.707
+Timor-Leste,2022,TLS,,Advanced,,2.343
+Togo,2022,TGO,,Advanced,,7.068
+Tonga,2023,TON,,Advanced,,0.826
+Trinidad and Tobago,2023,TTO,,Advanced,,2.579
+Tunisia,2023,TUN,,Advanced,,21.715
+Turkiye,2024,TUR,,Advanced,,9.129
+Turkmenistan,2024,TKM,,Advanced,,
+Turks and Caicos Islands,2024,TCA,,Advanced,,
+Tuvalu,2017,TUV,,Advanced,,2.978
+Uganda,2021,UGA,,Advanced,,9.947
+Ukraine,2021,UKR,,Advanced,,9.026
+United Arab Emirates,2023,ARE,,Advanced,,2.659
+United Kingdom,2024,GBR,,Advanced,,2.733
+United States,2024,USA,,Advanced,,2.608
+Uruguay,2024,URY,,Advanced,,1.909
+Uzbekistan,2020,UZB,,Advanced,,1.508
+Vanuatu,2020,VUT,,Advanced,,2.113
+"Venezuela, RB",2017,VEN,,Advanced,,5.76
+Vietnam,2023,VNM,,Advanced,,2.688
+Virgin Islands (U.S.),2024,VIR,,Advanced,,
+West Bank and Gaza,2024,PSE,,Advanced,,25.808
+"Yemen, Rep.",2024,YEM,,Advanced,,
+Zambia,2023,ZMB,,Advanced,,9.702
+Zimbabwe,2023,ZWE,,Advanced,,5.933
