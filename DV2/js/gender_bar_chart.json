@@ -1,90 +1,67 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
   "height": 400,
   "autosize": {"type": "fit", "contains": "padding"},
   "data": {
-    "url": "https://pkam0010.github.io/FIT3179/DV2/data/global_unemployment_gender_cleaned.csv"
+    "url": "https://pkam0010.github.io/FIT3179/DV2/data/unemployment_rate_by_gender_age_cleaned.csv"
   },
   "transform": [
-    {"filter": "datum.Year == selectedYear"},
     {
-      "fold": ["Male_unemployment_rate", "Female_unemployment_rate"],
-      "as": ["GenderKey", "Rate"]
+      "filter": "datum.age_group == '15-24' || datum.age_group == '25+' || datum.age_group == 'Under 15'"
     },
     {
-      "calculate": "datum.GenderKey == 'Male_unemployment_rate' ? 'Male' : 'Female'",
-      "as": "Gender"
+      "filter": "isValid(datum.Rate)"
     },
     {
-      "calculate": "datum.Gender == 'Male' ? -datum.Rate : datum.Rate",
-      "as": "signed_rate"
+      "calculate": "datum.sex == 'Male' ? -datum.Rate : datum.Rate",
+      "as": "DivergingRate"
+    },
+    {
+      "filter": "datum.Year == yearSelection"
     }
   ],
   "params": [
     {
-      "name": "selectedYear",
+      "name": "yearSelection",
       "value": 2024,
       "bind": {
         "input": "range",
-        "min": 2015,
+        "min": 2014,
         "max": 2024,
         "step": 1,
-        "name": "Year: "
+        "name": "Select Year: "
       }
     }
   ],
-  "layer": [
-    {
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "Country",
-          "type": "nominal",
-          "sort": "-x",
-          "title": "Country"
-        },
-        "x": {
-          "field": "signed_rate",
-          "type": "quantitative",
-          "title": "Unemployment Rate (%)",
-          "axis": {
-            "labelExpr": "abs(datum.value)",
-            "format": ".1f"
-          }
-        },
-        "color": {
-          "field": "Gender",
-          "type": "nominal",
-          "scale": {"domain": ["Male", "Female"], "range": ["#7c91e6", "#e8847b"]},
-          "title": "Gender"
-        },
-        "tooltip": [
-          {"field": "Country"},
-          {"field": "Year"},
-          {"field": "Gender"},
-          {"field": "Rate", "title": "Unemployment Rate (%)", "format": ".1f"}
-        ]
-      }
+  "mark": {"type": "bar"},
+  "encoding": {
+    "y": {
+      "field": "country_name",
+      "type": "ordinal",
+      "axis": {"title": "Country"},
+      "sort": "-x"
     },
-    {
-      "mark": {"type": "text", "align": "center", "baseline": "middle", "dx": 0, "dy": -8},
-      "encoding": {
-        "y": {"field": "Country", "type": "nominal", "sort": "-x"},
-        "x": {"field": "signed_rate", "type": "quantitative"},
-        "text": {"field": "Rate", "type": "quantitative", "format": ".1f"},
-        "color": {
-          "condition": {
-            "test": "datum.Gender == 'Male'",
-            "value": "black"
-          },
-          "value": "black"
-        }
-      }
-    }
-  ],
+    "x": {
+      "field": "DivergingRate",
+      "type": "quantitative",
+      "axis": {"title": "Unemployment Rate (%)"}
+    },
+    "color": {
+      "field": "sex",
+      "type": "nominal",
+      "scale": {"domain": ["Male", "Female"], "range": ["#4C78A8", "#E45756"]},
+      "legend": {"orient": "top"}
+    },
+    "tooltip": [
+      {"field": "country_name", "title": "Country"},
+      {"field": "sex", "title": "Gender"},
+      {"field": "Rate", "title": "Unemployment Rate (%)"},
+      {"field": "Year", "title": "Year"}
+    ]
+  },
   "config": {
     "view": {"stroke": "transparent"},
-    "axis": {"grid": false, "labelFontSize": 10, "titleFontSize": 12}
+    "axis": {"labelFontSize": 12, "titleFontSize": 13}
   }
 }
