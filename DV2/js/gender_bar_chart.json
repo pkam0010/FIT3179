@@ -77,7 +77,10 @@
       "field": "sex",
       "type": "nominal",
       "scale": {"domain": ["Male", "Female"], "range": ["#4C78A8", "#E45756"]},
-      "legend": {"orient": "top"}
+      "legend": {
+        "orient": "right",
+        "title": "Gender"
+      }
     },
     "tooltip": [
       {"field": "country_name", "title": "Country"},
