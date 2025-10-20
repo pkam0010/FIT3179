@@ -1,59 +1,37 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
   "height": 400,
-  "autosize": {"type": "fit", "contains": "padding"},
   "data": {
-    "url": "https://pkam0010.github.io/FIT3179/DV2/data/global_unemployment_age_group.csv"
+    "url": "https://pkam0010.github.io/FIT3179/DV2/data/unemployment_rate_by_gender_age_cleaned.csv"
   },
   "transform": [
-    {
-      "fold": ["2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],
-      "as": ["Year", "Unemployment Rate"]
-    },
-    {
-      "filter": "datum.country_name == countrySelection"
-    },
+    {"filter": "isValid(datum.Rate)"},
     {
       "aggregate": [
-        {
-          "op": "mean",
-          "field": "Unemployment Rate",
-          "as": "Avg Unemployment Rate"
-        }
+        {"op": "mean", "field": "Rate", "as": "AvgRate"}
       ],
-      "groupby": ["country_name", "Year", "age_group"]
-    }
+      "groupby": ["country_name", "age_group", "Year"]
+    },
+    {"filter": "datum.country_name == countrySelection"}
   ],
   "params": [
     {
       "name": "countrySelection",
-      "value": "Brazil",
+      "value": "Australia",
       "bind": {
         "input": "select",
         "options": [
-          "Brazil",
-          "Canada",
+          "Australia",
           "China",
-          "France",
-          "Germany",
-          "India",
-          "Italy",
-          "Japan",
           "United Kingdom",
-          "United States"
-        ],
-        "labels": [
-          "Brazil",
+          "United States",
+          "South Africa",
           "Canada",
-          "China",
-          "France",
-          "Germany",
-          "India",
-          "Italy",
+          "Brazil",
           "Japan",
-          "United Kingdom",
-          "United States"
+          "Germany",
+          "France"
         ],
         "name": "Select Country: "
       }
@@ -64,27 +42,28 @@
     "x": {
       "field": "Year",
       "type": "ordinal",
-      "title": "Year"
+      "axis": {"title": "Year"}
     },
     "y": {
-      "field": "Avg Unemployment Rate",
+      "field": "AvgRate",
       "type": "quantitative",
-      "title": "Unemployment Rate (%)"
+      "axis": {"title": "Average Unemployment Rate (%)"}
     },
     "color": {
       "field": "age_group",
       "type": "nominal",
-      "title": "Age Group"
+      "title": "Age Group",
+      "scale": {"scheme": "set2"}
     },
     "tooltip": [
       {"field": "country_name", "title": "Country"},
-      {"field": "Year"},
       {"field": "age_group", "title": "Age Group"},
-      {
-        "field": "Avg Unemployment Rate",
-        "title": "Unemployment Rate (%)",
-        "format": ".2f"
-      }
+      {"field": "Year", "title": "Year"},
+      {"field": "AvgRate", "title": "Average Unemployment Rate (%)", "format": ".2f"}
     ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"labelFontSize": 12, "titleFontSize": 13}
   }
 }
