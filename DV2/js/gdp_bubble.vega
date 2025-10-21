@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 400,
+  "data": {"url": "https://pkam0010.github.io/FIT3179/DV2/data/global_unemployment_rate_gdp_population_combined.csv"},
+  "params": [
+    {
+      "name": "RegionFilter",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All",
+          "Asia",
+          "Europe",
+          "North America",
+          "South America",
+          "Africa",
+          "Other"
+        ],
+        "labels": [
+          "All Regions",
+          "Asia",
+          "Europe",
+          "North America",
+          "South America",
+          "Africa",
+          "Other"
+        ],
+        "name": "Region: "
+      },
+      "value": "All"
+    },
+    {
+      "name": "YearSelection",
+      "bind": {
+        "input": "range",
+        "min": 2014,
+        "max": 2024,
+        "step": 1,
+        "name": "Select Year: "
+      },
+      "value": 2024
+    }
+  ],
+  "transform": [
+    {
+      "filter": "RegionFilter == 'All' || datum.region == RegionFilter"
+    },
+    {
+      "filter": "datum.Year == YearSelection"
+    }
+  ],
+  "mark": {
+    "type": "circle",
+    "opacity": 0.7,
+    "stroke": "black",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "x": {
+      "field": "GDP",
+      "type": "quantitative",
+      "title": "GDP per Capita (Current USD)",
+      "scale": {"type": "linear"}
+    },
+    "y": {
+      "field": "unemployment_rate",
+      "type": "quantitative",
+      "title": "Unemployment Rate (%)"
+    },
+    "size": {
+      "field": "Population",
+      "type": "quantitative",
+      "title": "Population",
+      "scale": {"range": [50, 2000]}
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Region",
+      "legend": {"orient": "right"}
+    },
+    "tooltip": [
+      {"field": "country", "title": "Country"},
+      {"field": "GDP", "title": "GDP per Capita", "format": ",.2f"},
+      {"field": "unemployment_rate", "title": "Unemployment Rate (%)", "format": ".1f"},
+      {"field": "population", "title": "Population", "format": ",.0f"},
+      {"field": "region", "title": "Region"},
+      {"field": "Year", "title": "Year"}
+    ]
+  },
+  "config": {
+    "axis": {"labelFontSize": 12, "titleFontSize": 13},
+    "legend": {"labelFontSize": 12, "titleFontSize": 13}
+  }
+}
