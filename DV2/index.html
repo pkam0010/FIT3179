@@ -32,9 +32,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Grid -->
 <div class="w3-row">
 
-<!-- Blog entries -->
 <div class="w3-col s12">
-    <!-- Blog entry -->
     <div class="w3-card-4 w3-margin w3-white">
         <h3 class="w3-center"><b>Global Unemployment Rate (2024)</b></h3>
         <div id="choropleth_map" style="width:100%; height:auto;"></div>
@@ -89,7 +87,24 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
   </div>
 </div>
-<!-- END BLOG ENTRIES -->
+
+<div class="w3-col s12">
+    <div class="w3-card-4 w3-margin w3-white">
+        <h3 class="w3-center"><b>Global Unemployment Rate by GDP (2014-2024)</b></h3>
+        <div id="gdp_bubble" style="width:100%; height:auto;"></div>
+
+        <script type="text/javascript">
+            var spec4 = "js/gdp_bubble.json";
+            vegaEmbed('#gdp_bubble', spec4, {actions: false}).then(function(result) {
+            }).catch(console.error);
+        </script>
+
+        <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+    </div>
+</div>
 
 <!-- END GRID -->
 </div><br>
