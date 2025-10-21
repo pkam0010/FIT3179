@@ -37,7 +37,7 @@
         "min": 2014,
         "max": 2024,
         "step": 1,
-        "name": "Select Year: "
+        "name": "Year: "
       },
       "value": 2024
     }

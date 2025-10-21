@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 400,
+  "autosize": {"type": "fit", "contains": "padding"},
+  "data": {
+    "url": "https://pkam0010.github.io/FIT3179/DV2/data/unemployment_rate_by_gender_age_cleaned.csv"
+  },
+  "transform": [
+  {
+    "filter": "datum.age_group == '15-24' || datum.age_group == '25+' || datum.age_group == 'Under 15'"
+  },
+  {
+    "filter": "isValid(datum.Rate)"
+  },
+  {
+    "calculate": "datum.sex == 'Male' ? -datum.Rate : datum.Rate",
+    "as": "DivergingRate"
+  },
+  {
+    "filter": "datum.Year == yearSelection"
+  },
+  {
+    "filter": "datum.country_name == 'Australia' || datum.country_name == 'China' || datum.country_name == 'United Kingdom' || datum.country_name == 'United States' || datum.country_name == 'South Africa' || datum.country_name == 'Canada' || datum.country_name == 'Brazil' || datum.country_name == 'Japan' || datum.country_name == 'Germany' || datum.country_name == 'France'"
+  },
+  {
+      "aggregate": [
+        {
+          "op": "mean",
+          "field": "Rate",
+          "as": "AverageRate"
+        }
+      ],
+      "groupby": ["country_name", "sex"]
+    },
+    {
+      "calculate": "datum.sex == 'Male' ? -datum.AverageRate : datum.AverageRate",
+      "as": "DivergingRate"
+    },
+    {
+      "calculate": "abs(datum.DivergingRate)",
+      "as": "AbsRate"
+    }
+  ],
+  "params": [
+    {
+      "name": "yearSelection",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2014,
+        "max": 2024,
+        "step": 1,
+        "name": "Select Year: "
+      }
+    }
+  ],
+  "mark": {"type": "bar"},
+  "encoding": {
+    "y": {
+      "field": "country_name",
+      "type": "ordinal",
+      "axis": {"title": "Country"},
+      "sort": "-x"
+    },
+    "x": {
+      "field": "DivergingRate",
+      "type": "quantitative",
+      "scale": {"domain": [-40, 40]},
+      "axis": {
+        "title": "Unemployment Rate (%)",
+        "labelExpr": "abs(datum.value)",
+        "tickMinStep": 10
+      }
+    },
+    "color": {
+      "field": "sex",
+      "type": "nominal",
+      "scale": {"domain": ["Male", "Female"], "range": ["#4C78A8", "#E45756"]},
+      "legend": {
+        "orient": "right",
+        "title": "Gender"
+      }
+    },
+    "tooltip": [
+      {"field": "country_name", "title": "Country"},
+      {"field": "AverageRate", "title": "Unemployment Rate (%)", "format": ".1f"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"labelFontSize": 12, "titleFontSize": 13}
+  }
+}

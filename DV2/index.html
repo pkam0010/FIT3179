@@ -106,6 +106,24 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
 </div>
 
+<div class="w3-col s12">
+    <div class="w3-card-4 w3-margin w3-white">
+        <h3 class="w3-center"><b>Global Unemployment Rate by Education Level (2021-2024)</b></h3>
+        <div id="education_level_bar" style="width:100%; height:auto;"></div>
+
+        <script type="text/javascript">
+            var spec5 = "js/education_level_bar.json";
+            vegaEmbed('#education_level_bar', spec5, {actions: false}).then(function(result) {
+            }).catch(console.error);
+        </script>
+
+        <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+    </div>
+</div>
+
 <!-- END GRID -->
 </div><br>
 
