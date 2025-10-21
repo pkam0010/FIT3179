@@ -48,6 +48,10 @@
     },
     {
       "filter": "datum.Year == YearSelection"
+    },
+    {
+      "calculate": "datum.GDP / 1e12",
+      "as": "GDP_trillion"
     }
   ],
   "mark": {
@@ -58,9 +62,9 @@
   },
   "encoding": {
     "x": {
-      "field": "GDP",
+      "field": "GDP_trillion",
       "type": "quantitative",
-      "title": "GDP per Capita (Current USD)",
+      "title": "GDP (Trillion USD)",
       "scale": {"type": "linear"}
     },
     "y": {
@@ -82,9 +86,9 @@
     },
     "tooltip": [
       {"field": "country", "title": "Country"},
-      {"field": "GDP", "title": "GDP per Capita", "format": ",.2f"},
+      {"field": "GDP_trillion", "title": "GDP per Capita (Trillion USD)", "format": ".2f"},
       {"field": "unemployment_rate", "title": "Unemployment Rate (%)", "format": ".1f"},
-      {"field": "population", "title": "Population", "format": ",.0f"},
+      {"field": "Population", "title": "Population"},
       {"field": "region", "title": "Region"},
       {"field": "Year", "title": "Year"}
     ]
