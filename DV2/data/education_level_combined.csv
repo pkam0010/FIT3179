@@ -1,4 +1,4 @@
-economy,year,economy_code,unemployment_with_basic_education_(%_of_total_labor_force_with_basic_education),education_level,unemployment_with_intermediate_education_(%_of_total_labor_force_with_intermediate_education),unemployment_with_advanced_education_(%_of_total_labor_force_with_advanced_education)
+country,year,country_code,unemployment_with_basic_education,education_level,unemployment_with_intermediate_education,unemployment_with_advanced_education
 Afghanistan,2021,AFG,6.034,Basic,,
 Albania,2023,ALB,9.694,Basic,,
 Algeria,2024,DZA,,Basic,,
@@ -233,7 +233,7 @@ Azerbaijan,2022,AZE,,Intermediate,5.13,
 Bahrain,2024,BHR,,Intermediate,,
 Bangladesh,2023,BGD,,Intermediate,4.448,
 Barbados,2023,BRB,,Intermediate,7.434,
-Belarus,2023,BLR,,Intermediate,4.0,
+Belarus,2023,BLR,,Intermediate,4,
 Belgium,2024,BEL,,Intermediate,6.563,
 Belize,2019,BLZ,,Intermediate,10.102,
 Benin,2022,BEN,,Intermediate,4.622,
