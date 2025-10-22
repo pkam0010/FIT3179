@@ -90,18 +90,31 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <div class="w3-col s12">
     <div class="w3-card-4 w3-margin w3-white">
-        <h3 class="w3-center"><b>Global Unemployment Rate by GDP (2014-2024)</b></h3>
-        <div id="gdp_bubble" style="width:100%; height:auto;"></div>
+        <h3 class="w3-center"><b>Global Unemployment Rate by GDP (2014–2024)</b></h3>
 
-        <script type="text/javascript">
-            var spec4 = "js/gdp_bubble.json";
-            vegaEmbed('#gdp_bubble', spec4, {actions: false}).then(function(result) {
-            }).catch(console.error);
-        </script>
+        <div class="w3-row-padding w3-padding-16">
+            <!-- Left column: Graph -->
+            <div class="w3-col l7 m12 s12">
+                <div id="gdp_bubble" style="width:100%; height:450px;"></div>
+                <script type="text/javascript">
+                    var spec4 = "js/gdp_bubble.json";
+                    vegaEmbed('#gdp_bubble', spec4, {actions: false})
+                        .then(function(result) {})
+                        .catch(console.error);
+                </script>
+            </div>
 
-        <div class="w3-container">
-            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <!-- Right column: Description -->
+            <div class="w3-col l5 m12 s12">
+                <div class="w3-container">
+                    <p style="font-size:16px; line-height:1.6;">
+                        This bubble chart illustrates the relationship between GDP per capita and unemployment rate across countries from 2014 to 2024. 
+                        Each circle represents a country, with its size proportional to population and color indicating region. 
+                        The visualization helps identify patterns where nations with higher GDP tend to have lower unemployment, 
+                        offering insights into the link between economic growth and labor market health.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -2,93 +2,67 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
   "height": 400,
-  "autosize": {"type": "fit", "contains": "padding"},
   "data": {
-    "url": "https://pkam0010.github.io/FIT3179/DV2/data/unemployment_rate_by_gender_age_cleaned.csv"
+    "url": "https://pkam0010.github.io/FIT3179/DV2/data/education_level_combined.csv"
   },
-  "transform": [
-  {
-    "filter": "datum.age_group == '15-24' || datum.age_group == '25+' || datum.age_group == 'Under 15'"
-  },
-  {
-    "filter": "isValid(datum.Rate)"
-  },
-  {
-    "calculate": "datum.sex == 'Male' ? -datum.Rate : datum.Rate",
-    "as": "DivergingRate"
-  },
-  {
-    "filter": "datum.Year == yearSelection"
-  },
-  {
-    "filter": "datum.country_name == 'Australia' || datum.country_name == 'China' || datum.country_name == 'United Kingdom' || datum.country_name == 'United States' || datum.country_name == 'South Africa' || datum.country_name == 'Canada' || datum.country_name == 'Brazil' || datum.country_name == 'Japan' || datum.country_name == 'Germany' || datum.country_name == 'France'"
-  },
-  {
-      "aggregate": [
-        {
-          "op": "mean",
-          "field": "Rate",
-          "as": "AverageRate"
-        }
-      ],
-      "groupby": ["country_name", "sex"]
-    },
-    {
-      "calculate": "datum.sex == 'Male' ? -datum.AverageRate : datum.AverageRate",
-      "as": "DivergingRate"
-    },
-    {
-      "calculate": "abs(datum.DivergingRate)",
-      "as": "AbsRate"
-    }
-  ],
   "params": [
     {
-      "name": "yearSelection",
-      "value": 2024,
+      "name": "EducationFilter",
       "bind": {
-        "input": "range",
-        "min": 2014,
-        "max": 2024,
-        "step": 1,
-        "name": "Select Year: "
-      }
+        "input": "select",
+        "options": ["All", "Basic", "Intermediate", "Advanced"],
+        "labels": ["All Levels", "Basic", "Intermediate", "Advanced"],
+        "name": "Education Level: "
+      },
+      "value": "All"
     }
   ],
-  "mark": {"type": "bar"},
-  "encoding": {
-    "y": {
-      "field": "country_name",
-      "type": "ordinal",
-      "axis": {"title": "Country"},
-      "sort": "-x"
+  "transform": [
+    {
+      "filter": "datum.country == 'Australia' || datum.country == 'China' || datum.country == 'United Kingdom' || datum.country == 'United States' || datum.country == 'South Africa' || datum.country == 'Canada' || datum.country == 'Brazil' || datum.country == 'Japan' || datum.country == 'Germany' || datum.country == 'France'"
     },
+    {
+      "calculate": "datum.education_level == 'Basic' ? toNumber(datum.unemployment_with_basic_education) : datum.education_level == 'Intermediate' ? toNumber(datum.unemployment_with_intermediate_education) : toNumber(datum.unemployment_with_advanced_education)",
+      "as": "Unemployment Rate"
+    },
+    {
+      "filter": "(EducationFilter == 'All') || (datum.education_level == EducationFilter)"
+    },
+    {
+      "filter": "isValid(datum['Unemployment Rate']) && datum['Unemployment Rate'] != null && !isNaN(datum['Unemployment Rate'])"
+    }
+  ],
+  "mark": {"type": "bar", "tooltip": true},
+  "encoding": {
     "x": {
-      "field": "DivergingRate",
+      "field": "country",
+      "type": "nominal",
+      "title": "Country",
+      "axis": {"labelAngle": -30}
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "Unemployment Rate",
       "type": "quantitative",
-      "scale": {"domain": [-40, 40]},
-      "axis": {
-        "title": "Unemployment Rate (%)",
-        "labelExpr": "abs(datum.value)",
-        "tickMinStep": 10
-      }
+      "title": "Unemployment Rate (%)"
     },
     "color": {
-      "field": "sex",
+      "field": "education_level",
       "type": "nominal",
-      "scale": {"domain": ["Male", "Female"], "range": ["#4C78A8", "#E45756"]},
-      "legend": {
-        "orient": "right",
-        "title": "Gender"
+      "title": "Education Level",
+      "scale": {
+        "domain": ["Basic", "Intermediate", "Advanced"],
+        "range": ["#fdae61", "#abd9e9", "#2c7bb6"]
       }
     },
     "tooltip": [
-      {"field": "country_name", "title": "Country"},
-      {"field": "AverageRate", "title": "Unemployment Rate (%)", "format": ".1f"}
+      {"field": "country", "title": "Country"},
+      {"field": "education_level", "title": "Education Level"},
+      {"field": "Unemployment Rate", "title": "Unemployment Rate (%)", "format": ".2f"}
     ]
   },
   "config": {
-    "view": {"stroke": "transparent"},
-    "axis": {"labelFontSize": 12, "titleFontSize": 13}
+    "axis": {"labelFontSize": 12, "titleFontSize": 14},
+    "legend": {"titleFontSize": 14, "labelFontSize": 12}
   }
 }
