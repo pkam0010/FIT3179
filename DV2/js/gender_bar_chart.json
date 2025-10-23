@@ -61,7 +61,7 @@
       "field": "country_name",
       "type": "ordinal",
       "axis": {"title": "Country"},
-      "sort": "-x"
+      "sort": {"field": "country_name", "order": "ascending"}
     },
     "x": {
       "field": "DivergingRate",
