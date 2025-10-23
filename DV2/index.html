@@ -137,36 +137,37 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <div class="w3-col s12">
   <div class="w3-card-4 w3-margin w3-white w3-padding-24">
-    <!-- Title section -->
-    <div class="w3-padding-16">
-      <h3 class="w3-center"><b>Global Unemployment Rate by Education Level (2021–2024)</b></h3>
-    </div>
+    <div class="w3-row-padding w3-padding-16">
 
-    <!-- Flex layout: text (left) and chart (right) -->
-    <div class="w3-row-padding" style="display: flex; flex-wrap: wrap; align-items: center;">
-      
-      <!-- Text on left -->
-      <div class="w3-col l5 m12 s12" style="padding: 20px;">
-        <p style="font-size:16px; line-height:1.6;">
-          This visualization compares unemployment rates across education levels (Basic, Intermediate, and Advanced)
-          from 2021–2024 for selected countries. It highlights how higher education levels generally correlate
-          with lower unemployment, reflecting the influence of skill levels on employability.
-        </p>
+      <!-- Text on the left -->
+      <div class="w3-col l5 m12 s12">
+        <div class="w3-container" style="flex: 1 1 40%; padding: 20px;">
+          <p>
+            This visualization compares unemployment rates across education levels (Basic, Intermediate, and Advanced) 
+            for selected countries. It highlights how higher education levels generally correlate
+            with lower unemployment, reflecting the influence of skill levels on employability.
+          </p>
+        </div>
       </div>
 
-      <!-- Chart on right -->
-      <div class="w3-col l7 m12 s12" style="padding: 10px;">
-        <div id="education_level_bar" style="width:100%; max-width:650px; height:400px; margin:auto;"></div>
-      </div>
-    </div>
+      <!-- Chart on the right -->
+      <div class="w3-col l7 m12 s12">
+        <div class="w3-container">
+          <h3 style="margin-bottom:10px; text-align:center;">
+            <b>Global Unemployment Rate by Education Level</b>
+          </h3>
 
-    <!-- Vega-Lite Chart Embed -->
-    <script type="text/javascript">
-      var spec5 = "js/education_level_bar.json";
-      vegaEmbed('#education_level_bar', spec5, { actions: false })
-        .then(function(result) {})
-        .catch(console.error);
-    </script>
+          <div id="education_level_bar" style="width:100%; height:450px;"></div>
+          <script type="text/javascript">
+            var spec5 = "js/education_level_bar.json";
+            vegaEmbed('#education_level_bar', spec5, { actions: false })
+              .then(function(result) {})
+              .catch(console.error);
+          </script>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 
