@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
-  "height": 400,
+  "height": 450,
   "autosize": {"type": "fit", "contains": "padding"},
   "data": {
     "url": "https://pkam0010.github.io/FIT3179/DV2/data/unemployment_rate_by_gender_age_cleaned.csv"
